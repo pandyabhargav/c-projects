@@ -1,23 +1,24 @@
 #include <stdio.h>
 
 main() {
-	char x[100];
-	int i,z=0;
+	char s[1000];
+	int i,w=0;
 
 	printf("Enter  the string : ");
-	gets(x);
+	gets(s);
 
-	for(i=0; x[i]; i++) {
-		if(x[i]==32) {
-			z++;
+	for(i=0; s[i]; i++) {
+		if(s[i]==32) {
+
+			w++;
 		}
+
 	}
 	if(i>0) {
 
-		z++;
+		w++;
 	}
 
-
-	printf("no of words in string = %d\n",z);
+	printf("no of words in string = %d\n",w);
 
 }
